@@ -55,7 +55,7 @@ gulp.task('transpile', function (done) {
                 return sourcePath.substr(0);
             })
         )
-        .pipe(sourcemaps.write('./', { sourceRoot: __dirname }))
+        .pipe(sourcemaps.write('./', { sourceRoot: __dirname + '/src'}))
         .pipe(gulp.dest('dist'));
     return tsResult;
 });
