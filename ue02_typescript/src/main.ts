@@ -1,5 +1,11 @@
+import { Server } from './server';
 
-import { Person } from './person';
+class Main {
 
-let p = new Person ('Lorenz', 'Muri', 2000);
-console.log(p.vorname, p.nachname, p.birthYear);
+    public static main () {
+        const server = new Server(4711);
+        server.start();
+    }
+}
+
+Main.main();
