@@ -3,16 +3,24 @@
 
 import * as http from 'http';
 
+import * as path from 'path';
+
 import * as express from 'express';
+
 
 export class Server {
 
     private _port: number;
     private _server: express.Express;
 
-    constructor (port: number) {
+    public constructor (port: number) {
         this._port = port;
         this._server = express();
+        this._server.get('/liste',
+        (req, resp, next) => this.handleGetListe(req, resp, next));
+
+        this._server.get('/image.png',
+        (req, resp, next) => this.sendImage(resp));
     }
 
     public start () {
@@ -23,5 +31,18 @@ export class Server {
 
     public get port() {
         return this._port;
+    }
+
+    private handleGetListe (reg: express.Request, resp: express.Response
+        , next: express.NextFunction) 
+    {
+        const filePath = path.join(__dirname, '..' , 'assets', 'liste.html');
+        console.log(filePath);
+        resp.sendFile(filePath);
+    }
+
+    private sendImage (res: express.Response){
+        const filePath = path.join(__dirname, '..', 'image.png');
+        res.sendfile(filePath);
     }
 }
