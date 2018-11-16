@@ -14,8 +14,10 @@ export class Server {
     private _server: express.Express;
 
     public constructor (port: number) {
+        const assetsPath = path.join(__dirname, '..', 'assets');
         this._port = port;
         this._server = express();
+        this._server.use('/', express.static(assetsPath));
         this._server.get('/liste',
         (req, resp, next) => this.handleGetListe(req, resp, next));
 
@@ -34,15 +36,14 @@ export class Server {
     }
 
     private handleGetListe (reg: express.Request, resp: express.Response
-        , next: express.NextFunction) 
-    {
+        , next: express.NextFunction) {
         const filePath = path.join(__dirname, '..' , 'assets', 'liste.html');
         console.log(filePath);
         resp.sendFile(filePath);
     }
 
-    private sendImage (res: express.Response){
-        const filePath = path.join(__dirname, '..', 'image.png');
-        res.sendfile(filePath);
+    private sendImage (resp: express.Response) {
+        const filePath = path.join(__dirname, '..', 'assets', 'image.png');
+        resp.sendfile(filePath);
     }
 }
