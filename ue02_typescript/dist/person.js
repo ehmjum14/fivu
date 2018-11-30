@@ -7,13 +7,13 @@ class Person {
         this._birthYear = birthYear;
     }
     get vorname() {
-        return this.vorname;
+        return this._vorname;
     }
     get nachname() {
-        return this.nachname;
+        return this._nachname;
     }
     get birthYear() {
-        return this.birthYear;
+        return this._birthYear;
     }
     set vorname(v) {
         if (v === undefined || v === null || v === '') {

@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "build",
-            "command": "gulp",
+            "command": "node_modules/gulp/bin/gulp.js",
             "type": "shell",
             "args": [
                 "--gulpfile",
@@ -11,7 +11,7 @@
                 "build"
             ],
             "group": "build",
-            "presentation" : { "reveal": "silent" },
+            "presentation" : { "reveal": "always" },
             "problemMatcher": [
                 {
                     "owner": "gulp-typescript",
