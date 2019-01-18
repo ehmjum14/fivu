@@ -16,6 +16,7 @@ class Server {
         this._server.use(bodyParser.urlencoded());
         this._server.post('/login.html', (req, res, next) => this.handlePostLogin(req, res, next));
         this._server.get('/liste', (req, res, next) => this.handleGetListe(req, res, next));
+        this._server.get('/welcome', (req, res) => this.handleGetWelcome(req, res));
     }
     start() {
         this._server.listen(this._port);
@@ -26,7 +27,7 @@ class Server {
     }
     handlePostLogin(req, res, next) {
         if (req.body.email === 'test@text.at' && req.body.password === 'geheim') {
-            res.render('welcome.pug', { anrede: 'Herr', name: 'Rüsselputzer' });
+            res.redirect('/welcome');
         }
         else {
             res.status(404).send('404 NOT AUTHORIZED');
@@ -37,6 +38,9 @@ class Server {
         const filePath = path.join(__dirname, '..', 'assets', 'liste.html');
         console.log(filePath);
         res.sendFile(filePath);
+    }
+    handleGetWelcome(req, res) {
+        res.render('welcome.pug', { anrede: 'Herr', name: 'Rossi' });
     }
 }
 exports.Server = Server;

@@ -31,6 +31,9 @@ export class Server {
         this._server.get('/liste',
           (req, res, next) => this.handleGetListe(req, res, next)
         );
+        this._server.get('/welcome',
+          (req, res) => this.handleGetWelcome(req, res)
+        );
     }
 
     public start () {
@@ -45,7 +48,8 @@ export class Server {
     private handlePostLogin (req: express.Request, res: express.Response,
         next: express.NextFunction) {
             if (req.body.email === 'test@text.at' && req.body.password === 'geheim') {
-                res.render('welcome.pug',{ anrede: 'Herr', name: 'Rüsselputzer'});
+                // res.render('welcome.pug',{ anrede: 'Herr', name: 'Rüsselputzer'});
+                res.redirect('/welcome');
             } else {
                     res.status(404).send('404 NOT AUTHORIZED');
             }
@@ -59,5 +63,9 @@ export class Server {
         const filePath = path.join(__dirname, '..', 'assets', 'liste.html');
         console.log(filePath);
         res.sendFile(filePath);
+    }
+
+    private handleGetWelcome(req: express.Request, res: express.Response) {
+        res.render('welcome.pug', {anrede: 'Herr', name: 'Rossi'});
     }
 }
