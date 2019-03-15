@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="23cm" height="14cm" viewBox="30 -22 450 277" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="200" cy="100" rx="40" ry="40"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="200" cy="100" rx="40" ry="40"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="400" cy="100" rx="40" ry="40"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="400" cy="100" rx="40" ry="40"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 395.068,51.6366 A 113.333,113.333 0 0 0 200,60"/>
+    <polygon style="fill: #000000" points="398.948,58.027 389.83,51.5564 395.418,51.4094 398.654,46.8505 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="398.948,58.027 389.83,51.5564 395.418,51.4094 398.654,46.8505 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="400" y1="140" x2="209.736" y2="140"/>
+    <polygon style="fill: #000000" points="202.236,140 212.236,135 209.736,140 212.236,145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="202.236,140 212.236,135 209.736,140 212.236,145 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 449.25,97.8791 A 36.6667,36.6667 0 1 0 400,60"/>
+    <polygon style="fill: #000000" points="442.226,99.7865 451.703,93.8546 449.692,99.0704 452.658,103.809 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="442.226,99.7865 451.703,93.8546 449.692,99.0704 452.658,103.809 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 197.879,50.7502 A 36.6667,36.6667 0 1 0 160,100"/>
+    <polygon style="fill: #000000" points="199.787,57.7741 193.855,48.2972 199.07,50.3084 203.809,47.3424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="199.787,57.7741 193.855,48.2972 199.07,50.3084 203.809,47.3424 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="190" y="100">
+    <tspan x="190" y="100">Aus</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="390" y="100">
+    <tspan x="390" y="100">Ein</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="30" y="50">
+    <tspan x="30" y="50">nicht gedrückt</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="250" y="220">
+    <tspan x="250" y="220">  nicht gedrückt</tspan>
+    <tspan x="250" y="236">------------------------</tspan>
+    <tspan x="250" y="252">Event generieren</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="270" y="-10">
+    <tspan x="270" y="-10">gedrückt</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="460" y="20">
+    <tspan x="460" y="20">Ein</tspan>
+  </text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "ue01_javascript",
+  "version": "0.0.1",
+  "description": "Erstes Java Programm FIV",
+  "main": "main.js",
+  "scripts": {
+    "build": "echo \"not implemented yet\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manfred Steiner",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.1.1"
+  }
+}
